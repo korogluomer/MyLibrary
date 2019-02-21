@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "990376170388",
+    "firebase_url": "https://my-library-91d04.firebaseio.com",
+    "project_id": "my-library-91d04",
+    "storage_bucket": "my-library-91d04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990376170388:android:65aa59e0fbb3f965",
+        "android_client_info": {
+          "package_name": "com.example.omer.mylibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990376170388-10kot50billc77m6e7q485laeg5krfla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFJc9Yh5d-hC1VJw3ffYqiyg1SE_b2GVU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

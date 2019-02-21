@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_fragment" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/btnMainProfile"
+            app:layout_constraintStart_toEndOf="@+id/btnMainProfile">
+
+            <Button
+                android:id="@+id/btnMainProfile"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/profile"
+                android:onClick="ToProfile" />
+
+            <Button
+                android:id="@+id/btnMainLibrary"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/library"
+                android:onClick="ToLibrary" />
+
+            <Button
+                android:id="@+id/btnMainAddBook"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/add_book"
+                android:onClick="ToAddBook" />
+
+            <Button
+                android:id="@+id/btnMainBarcode"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/barcode"
+                android:onClick="ToBarcode" />
+
+            <Button
+                android:id="@+id/btnMainEditBook"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/edit_book"
+                android:onClick="ToEdit" />
+
+            <Button
+                android:id="@+id/btnMainDelete"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/delete_book"
+                android:onClick="ToDelete" />
+        </GridLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/richtext"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bmo" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="185dp"
+            android:fontFamily="@font/allerta"
+            android:text="LOADING..."
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_google_signin_btn_text_light_disabled" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
